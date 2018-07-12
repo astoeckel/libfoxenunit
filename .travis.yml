@@ -4,6 +4,7 @@ compiler:
   - clang
   - gcc
 install:
+  - sudo apt-get install ninja-build
   - pip3 install --user --upgrade pip
   - pip3 install --user meson
 script:
