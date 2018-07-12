@@ -1,4 +1,4 @@
-# libfoxenunit ― A fairly minimalist unit test framework for C. With colours.
+# libfoxenunit ― Fairly minimalist unit tests for C. With colours.
 
 [![Build Status](https://travis-ci.org/astoeckel/libfoxenunit.svg?branch=master)](https://travis-ci.org/astoeckel/libfoxenunit)
 
@@ -72,8 +72,6 @@ See `examples/example.c` for a more comprehensive example.
 
 ## Available ASSERT and EXPECT macros
 
-`EXPECT` macros are used to print an error message and mark a test as failed if the given condition is not fulfilled. `ASSERT` macros do the same, but will also stop executing this particular test. Usually `ASSERT` is only used if failing this condition would make it impossible to continue with the test.
-
 * `EXPECT_EQ(should, is)`, `ASSERT_EQ(should, is)`<br/>Checks for equality, i.e. `should == is`
 * `EXPECT_GT(should, is)`, `ASSERT_GT(should, is)`<br/>Checks for `should` being greater than `is`, i.e. `should > is`
 * `EXPECT_GE(should, is)`, `ASSERT_GE(should, is)`<br/>Checks for `should` being greater than or equal to `is`, i.e. `should >= is`
@@ -83,6 +81,10 @@ See `examples/example.c` for a more comprehensive example.
 * `EXPECT_TRUE(is)`, `ASSERT_TRUE(is)`<br/>Checks for `is` evaluating to the boolean expression `true`
 * `EXPECT_FALSE(is)`, `ASSERT_FALSE(is)`<br/>Checks for `is` evaluating to the boolean expression `false`
 * `EXPECT_NEAR(should, is, err)`, `ASSERT_NEAR(should, is, err)`<br/>Ensures that the difference between `should` and `is` is smaller or equal to `err`.
+
+`EXPECT` macros are used to print an error message and mark a test as failed if the given condition is not fulfilled.
+
+`ASSERT` macros do the same, but will also stop executing this particular test. Usually `ASSERT` is only used if failing this condition would make it impossible to continue with the test.
 
 ## FAQ about the *Foxen* series of C libraries
 
