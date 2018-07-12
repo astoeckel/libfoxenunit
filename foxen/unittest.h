@@ -56,7 +56,7 @@ static void fx_print(char const *s) {
 #endif
 	}
 	if (fx_test_use_colour) {
-		fprintf(stderr, s);
+		fputs(s, stderr);
 	} else {
 		char const *s0 = s;
 		while (*s) {
