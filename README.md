@@ -2,8 +2,7 @@
 
 [![Build Status](https://travis-ci.org/astoeckel/libfoxenunit.svg?branch=master)](https://travis-ci.org/astoeckel/libfoxenunit)
 
-This unit test framework is written in the C++ compatible subset of
-ANSI C89. It consists of a single header file `unittest.h`.
+Minimalist unit test framework written in the C++ compatible subset of ANSI C89. Consists of a single header file `unittest.h`.
 
 ## Features
 
