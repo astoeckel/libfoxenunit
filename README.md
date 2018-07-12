@@ -1,4 +1,4 @@
-# libfoxenunit ― Fairly minimalist unit tests for C. With colours.
+# libfoxenunit ― Minimalist unit tests for C. With colours.
 
 [![Build Status](https://travis-ci.org/astoeckel/libfoxenunit.svg?branch=master)](https://travis-ci.org/astoeckel/libfoxenunit)
 
