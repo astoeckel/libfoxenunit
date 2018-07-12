@@ -73,7 +73,7 @@ static void fx_print(char const *s) {
 				++s;
 			}
 		}
-		fprintf(stderr, s0);
+		fputs(s0, stderr);
 	}
 }
 
