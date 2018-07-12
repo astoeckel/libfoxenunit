@@ -1,8 +1,11 @@
 language: c
+python: '3.6'
 compiler:
   - clang
   - gcc
-python: '3.6'
+install:
+  - pip3 install --user --upgrade pip
+  - pip3 install --user meson
 script:
   - mkdir build
   - cd build
