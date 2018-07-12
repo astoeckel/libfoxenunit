@@ -55,6 +55,7 @@ void test_assert() {
 int main() {
 	RUN(test_ok);
 	RUN(test_fail);
-	RUN(test_assert); /* Assertions MUST be executed from RUN */
+	RUN(test_assert); /* MUST be executed using RUN due to longjmp magic */
+	/* test_assert(); */ /* DON'T do this! Might eat your computer. */
 	DONE;
 }
