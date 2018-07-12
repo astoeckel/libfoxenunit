@@ -26,6 +26,20 @@ exe_example = executable(
     include_directories: inc_foxen,
     install: false)
 
+# Compile and register the unit tests
+exe_test_success = executable(
+    'test_success',
+    'test/test_success.c',
+    include_directories: inc_foxen,
+    install: false)
+exe_test_fail = executable(
+    'test_fail',
+    'test/test_fail.c',
+    include_directories: inc_foxen,
+    install: false)
+test('test_success', exe_test_success)
+test('test_fail', exe_test_fail)
+
 # Install the header file
 install_headers(
     ['foxen/unittest.h'],

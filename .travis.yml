@@ -1,0 +1,14 @@
+language: c
+compiler:
+  - clang
+  - gcc
+install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq python3 pip3
+  - pip3 install --user meson
+script:
+  - mkdir build
+  - cd build
+  - meson ..
+  - ninja && ninja test
+
