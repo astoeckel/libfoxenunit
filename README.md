@@ -101,7 +101,7 @@ See `examples/example.c` for a more comprehensive example.
 
 **Q: Would you recommend to use these libraries in my project?**
 
-**A:** That depends. Some of the code is fairly specialized according to my own needs and might not be intended to be general purpose. If what you are going to use these libraries for aligns with their original purpose, then sure, go ahead. Otherwise, probably not, and as explained below, I'm also not super open to expanding the scope of these libraries.
+**A:** That depends. Some of the code is fairly specialized according to my own needs and might not be intended to be general. If what you are going to use these libraries for aligns with their original purpose, then sure, go ahead. Otherwise, I'd probably advise against using these libraries, and as explained below, I'm not super open to expanding their scope.
 
 **Q: Can you licence these libraries under a something more permissive than AGPLv3?**
 
