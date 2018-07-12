@@ -56,7 +56,7 @@ Usage is as follows:
 #include <foxen/unittest.h>
 
 /* Unit tests are just plain functions */
-void test() {
+static void test() {
 	EXPECT_EQ(1, 1); /* This will be OK */
 }
 

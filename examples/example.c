@@ -18,7 +18,7 @@
 
 #include <foxen/unittest.h>
 
-void test_ok() {
+static void test_ok() {
 	EXPECT_EQ(0, 0);
 	EXPECT_GT(1, 0);
 	EXPECT_GE(1, 0);
@@ -33,7 +33,7 @@ void test_ok() {
 	EXPECT_NEAR(1.0, 1.0 + 1e-7, 1e-6);
 }
 
-void test_fail() {
+static void test_fail() {
 	EXPECT_EQ(0, 1);
 	EXPECT_GT(0, 1);
 	EXPECT_GT(1, 1);
@@ -47,7 +47,7 @@ void test_fail() {
 	EXPECT_NEAR(1.0, 1.1, 1e-6);
 }
 
-void test_assert() {
+static void test_assert() {
 	ASSERT_TRUE(0);
 	printf("Assert will longjmp back to main(). This will not be printed.");
 }
