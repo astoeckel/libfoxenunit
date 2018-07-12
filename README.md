@@ -85,7 +85,7 @@ See `examples/example.c` for a more comprehensive example.
 
 `ASSERT` macros do the same, but will also stop executing this particular test. Usually `ASSERT` is only used if failing this condition would make it impossible to continue with the test.
 
-## FAQ about the *Foxen* series of C libraries
+## FAQ regarding the *Foxen* series of C libraries
 
 **Q: What's with the name?**
 
