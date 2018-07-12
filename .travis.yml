@@ -1,8 +1,8 @@
 language: c
-python: '3.6'
 compiler:
   - clang
   - gcc
+env: PYENV_VERSION='3.6'
 install:
   - sudo apt-get install ninja-build
   - pip3 install --user --upgrade pip
