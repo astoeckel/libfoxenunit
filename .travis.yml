@@ -5,7 +5,8 @@ compiler:
 install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq python3 python3-pip
-  - pip3 install --user meson
+  - sudo pip3 install --upgrade pip
+  - sudo pip3 install meson
 script:
   - mkdir build
   - cd build
