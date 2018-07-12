@@ -5,8 +5,7 @@ compiler:
 env: PYENV_VERSION='3.6'
 install:
   - sudo apt-get install ninja-build
-  - sudo pip3 install --upgrade pip
-  - sudo pip3 install --user meson
+  - pip3 install --user meson
 script:
   - mkdir build
   - cd build
