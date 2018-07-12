@@ -14,27 +14,32 @@
 #  You should have received a copy of the GNU Affero General Public License
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-project('libfoxenbitstream', 'c', default_options : ['c_std=c89'])
+project('libfoxenunit', 'c', default_options : ['c_std=c89'])
 
 # This is a header only library
 inc_foxen = include_directories('.')
 
 # Compile the example program
-exe_example = executable('example',
-                         'examples/example.c',
-                         include_directories: inc_foxen,
-                         install: false)
+exe_example = executable(
+    'example',
+    'examples/example.c',
+    include_directories: inc_foxen,
+    install: false)
 
 # Install the header file
-install_headers('foxen/unittest.h', subdir: 'foxen')
+install_headers(
+    ['foxen/unittest.h'],
+    subdir: 'foxen')
 
 # Generate a Pkg config file
 pkg = import('pkgconfig')
-pkg.generate(subdirs: [],
-             name: 'libfoxenunit',
-             version: '1.0',
-             filebase: 'libfoxenunit',
-             description: 'Minimal unittest library')
+pkg.generate(
+    subdirs: [],
+    name: 'libfoxenunit',
+    version: '1.0',
+    filebase: 'libfoxenunit',
+    description: 'Minimal unittest library')
+
 
 # Export the dependency
 dep_foxenunit = declare_dependency(include_directories: inc_foxen)
