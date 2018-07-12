@@ -74,15 +74,15 @@ See `examples/example.c` for a more comprehensive example.
 
 `EXPECT` macros are used to print an error message and mark a test as failed if the given condition is not fulfilled. `ASSERT` macros do the same, but will also stop executing this particular test. Usually `ASSERT` is only used if failing this condition would make it impossible to continue with the test.
 
-* `EXPECT_EQ(should, is)`, `ASSERT_EQ(should, is)`: checks for equality, i.e. `should == is`
-* `EXPECT_GT(should, is)`, `ASSERT_GT(should, is)`: checks for `should` being greater than `is`, i.e. `should > is`
-* `EXPECT_GE(should, is)`, `ASSERT_GE(should, is)`: checks for `should` being greater than or equal to `is`, i.e. `should >= is`
-* `EXPECT_LT(should, is)`, `ASSERT_LT(should, is)`: checks for `should` being smaller than `is`, i.e. `should < is`
-* `EXPECT_LE(should, is)`, `ASSERT_LE(should, is)`: checks for `should` being smaller than or equal to `is`, i.e. `should <= is`
-* `EXPECT_NE(should, is)`, `ASSERT_NE(should, is)`: checks for `should` being not equal to `is`, i.e. `should != is`
-* `EXPECT_TRUE(is)`, `ASSERT_TRUE(is)`: checks for `is` evaluating to the boolean expression `true`
-* `EXPECT_FALSE(is)`, `ASSERT_FALSE(is)`: checks for `is` evaluating to the boolean expression `false`
-* `EXPECT_NEAR(should, is, err)`, `ASSERT_NEAR(should, is, err)`: ensures that the difference between `should` and `is` is smaller or equal to `err`.
+* `EXPECT_EQ(should, is)`, `ASSERT_EQ(should, is)`<br/>Checks for equality, i.e. `should == is`
+* `EXPECT_GT(should, is)`, `ASSERT_GT(should, is)`<br/>Checks for `should` being greater than `is`, i.e. `should > is`
+* `EXPECT_GE(should, is)`, `ASSERT_GE(should, is)`<br/>Checks for `should` being greater than or equal to `is`, i.e. `should >= is`
+* `EXPECT_LT(should, is)`, `ASSERT_LT(should, is)`<br/>Checks for `should` being smaller than `is`, i.e. `should < is`
+* `EXPECT_LE(should, is)`, `ASSERT_LE(should, is)`<br/>Checks for `should` being smaller than or equal to `is`, i.e. `should <= is`
+* `EXPECT_NE(should, is)`, `ASSERT_NE(should, is)`<br/>Checks for `should` being not equal to `is`, i.e. `should != is`
+* `EXPECT_TRUE(is)`, `ASSERT_TRUE(is)`<br/>Checks for `is` evaluating to the boolean expression `true`
+* `EXPECT_FALSE(is)`, `ASSERT_FALSE(is)`<br/>Checks for `is` evaluating to the boolean expression `false`
+* `EXPECT_NEAR(should, is, err)`, `ASSERT_NEAR(should, is, err)`<br/>Ensures that the difference between `should` and `is` is smaller or equal to `err`.
 
 ## FAQ about the *Foxen* series of C libraries
 
