@@ -89,7 +89,7 @@ See `examples/example.c` for a more comprehensive example.
 
 **Q: What's with the name?**
 
-**A:** [**Foxen**](http://kingkiller.wikia.com/wiki/Foxen) is a mysterious object used by Auri to light her way through the catacumbal “Underthing”. These software libraries are similar. Mysterious and catacumbal. Probably less useful than an eternal sympathy lamp.
+**A:** [**Foxen**](http://kingkiller.wikia.com/wiki/Foxen) is a mysterious object used by Auri that lights her way through the catacumbal “Underthing”. These software libraries are similar. Mysterious and catacumbal. Probably less useful than an eternal sympathy lamp.
 
 **Q: What is the purpose and goal of these libraries?**
 
