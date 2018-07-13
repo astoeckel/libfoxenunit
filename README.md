@@ -6,8 +6,6 @@ Minimalist unit test framework written in the C++ compatible subset of ANSI C89.
 
 ## Features
 
-The library implements the following:
-
 * Relatively lightweight at 160 lines of code
 * Variety of `ASSERT` and `EXPECT` statements akin to those found in Google Test
 * No heap allocations
