@@ -87,7 +87,7 @@ See `examples/example.c` for a more comprehensive example.
 
 **Q: What's with the name?**
 
-**A:** [**Foxen**](http://kingkiller.wikia.com/wiki/Foxen) is a mysterious object used by Auri, that lights her way through the catacumbal “Underthing”. These software libraries are similar. Mysterious and catacumbal. Though probably less useful than an eternal sympathy lamp.
+**A:** [*Foxen*](http://kingkiller.wikia.com/wiki/Foxen) is a mysterious glowing object used by Auri to guide her through the catacumbal “Underthing”. These software libraries are similar. Mysterious and catacumbal. Probably less useful than an eternal sympathy lamp though.
 
 **Q: What is the purpose and goal of these libraries?**
 
@@ -103,7 +103,7 @@ See `examples/example.c` for a more comprehensive example.
 
 **Q: Can you licence these libraries under a something more permissive than AGPLv3?**
 
-**A:** Well, if you ask nicely ;-) Seriously, I'm not a fan of giving my work away “for free” (i.e., inclusion of my code in commercial or otherwise proprietary software) without getting something back (e.g., public access to the source code of the things other people built with it). That being said, some of the `foxen` libraries may be too trivial to warrant the use of a strong copyleft licence. Correspondingly, I might reconsider this decision for individual libraries. Also see “[Why you shouldn't use the Lesser GPL for your next library](https://www.gnu.org/licenses/why-not-lgpl.en.html)” for more info.
+**A:** Maybe, if you ask nicely. I'm not a fan of giving my work away “for free” (i.e., inclusion of my code in commercial or otherwise proprietary software) without getting something back (e.g., public access to the source code of the things other people built with it). That being said, some of the `foxen` libraries may be too trivial to warrant the use of a strong copyleft licence. Correspondingly, I might reconsider this decision for individual libraries. See “[Why you shouldn't use the Lesser GPL for your next library](https://www.gnu.org/licenses/why-not-lgpl.en.html)” for more info.
 
 **Q: Can I contribute?**
 

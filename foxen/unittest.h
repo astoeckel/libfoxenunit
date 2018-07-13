@@ -1,5 +1,5 @@
 /*
- *  libfoxenunit -- Minimal unit test library for C
+ *  libfoxenunit -- Minimalist unit test library for C
  *  Copyright (C) 2018  Andreas Stöckel
  *
  *  This program is free software: you can redistribute it and/or modify
