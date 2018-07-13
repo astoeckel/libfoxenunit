@@ -11,7 +11,7 @@ The library implements the following:
 * Relatively lightweight at 160 lines of code
 * Variety of `ASSERT` and `EXPECT` statements akin to those found in Google Test
 * No heap allocations
-* Uses ANSI escape codes on Unix platforms for colourful output!
+* Uses ANSI escape codes on Unix platforms for colourful output! 🌈
 
 Please be aware that this library does explicitly *not* support automatic test discovery. You have to manually list your unit tests in `main()`. See below for an example.
 
@@ -23,7 +23,7 @@ Just copy `foxen/unittest.h` to a place where your compiler can find it or adjus
 ### The less simple way
 Use [Meson](https://mesonbuild.com/) to build this library. To this end, do the following.
 
-If you have not already done so, install `meson`, e.g. by using `pip
+If you have not already done so, install `meson`, e.g. by using `pip`
 ```sh
 pip3 install --user meson
 ```
@@ -89,7 +89,7 @@ See `examples/example.c` for a more comprehensive example.
 
 **Q: What's with the name?**
 
-**A:** [**Foxen**](http://kingkiller.wikia.com/wiki/Foxen) is a mysterious object used by Auri that lights her way through the catacumbal “Underthing”. These software libraries are similar. Mysterious and catacumbal. Probably less useful than an eternal sympathy lamp.
+**A:** [**Foxen**](http://kingkiller.wikia.com/wiki/Foxen) is a mysterious object used by Auri, that lights her way through the catacumbal “Underthing”. These software libraries are similar. Mysterious and catacumbal. Though probably less useful than an eternal sympathy lamp.
 
 **Q: What is the purpose and goal of these libraries?**
 
