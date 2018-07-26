@@ -38,6 +38,7 @@
 static volatile int fx_test_n_failed = 0;
 static volatile int fx_test_n_success = 0;
 static volatile int fx_test_failed = 0;
+static volatile int fx_this_test_failed = 0;
 static int fx_test_use_colour = -1;
 static jmp_buf fx_test_assert_buffer;
 
@@ -89,18 +90,20 @@ static void fx_print(char const *s) {
 
 #define EXPECT(should, is, rel)                                    \
 	do {                                                           \
+		fx_this_test_failed = 0;                                   \
 		if (!((should)rel(is))) {                                  \
 			fx_print(FX_ANSI_RED "[ERR]" FX_ANSI_RESET             \
 			                     " Assertion failed in " __FILE__  \
 			                     ", line " FX_STR(__LINE__) "\n"); \
 			fx_test_failed = 1;                                    \
+			fx_this_test_failed = 1;                               \
 		}                                                          \
 	} while (0)
 
 #define ASSERT(should, is, rel)                \
 	do {                                       \
 		EXPECT(should, is, rel);               \
-		if (fx_test_failed) {                  \
+		if (fx_this_test_failed) {             \
 			longjmp(fx_test_assert_buffer, 1); \
 		}                                      \
 	} while (0)

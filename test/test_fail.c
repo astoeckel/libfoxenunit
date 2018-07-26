@@ -365,6 +365,14 @@ static void test_fail_assert_48() {
 	e = 1;
 }
 
+static void test_fail_expect_assert() {
+	e = 1;
+	EXPECT_TRUE(0);
+	ASSERT_TRUE(1);
+	EXPECT_FALSE(0);
+	e = 0;
+}
+
 int main_wrapper() {
 	RUN(test_fail_expect_0);
 	RUN(test_fail_expect_1);
@@ -464,12 +472,13 @@ int main_wrapper() {
 	RUN(test_fail_assert_46);
 	RUN(test_fail_assert_47);
 	RUN(test_fail_assert_48);
+	RUN(test_fail_expect_assert);
 	DONE;
 }
 
 int main() {
 	/* This unit test should succeed if the test fails */
-	return ((main_wrapper() > 0) && (fx_test_n_failed == 98) &&
+	return ((main_wrapper() > 0) && (fx_test_n_failed == 99) &&
 	        (fx_test_n_success == 0) && (e == 0))
 	           ? 0
 	           : 1;
