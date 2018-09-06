@@ -1,8 +1,8 @@
-# libfoxenunit ― Minimalist unit tests for C. With colours.
+# libfoxenunit ― Minimal unit tests for C. With colours.
 
 [![Build Status](https://travis-ci.org/astoeckel/libfoxenunit.svg?branch=master)](https://travis-ci.org/astoeckel/libfoxenunit)
 
-Minimalist unit test framework written in the C++ compatible subset of ANSI C89. Consists of a single header file `unittest.h`.
+Minimal unit test framework written in the C++ compatible subset of ANSI C89. Consists of a single header file `unittest.h`.
 
 ## Features
 
