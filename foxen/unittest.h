@@ -35,12 +35,20 @@
 #include <unistd.h>
 #endif
 
+#ifdef __GNUC__
+#define FX_VAR_NOT_USED __attribute__ ((unused))
+#else
+#define FX_VAR_NOT_USED
+#endif
+
 static volatile int fx_test_n_failed = 0;
 static volatile int fx_test_n_success = 0;
 static volatile int fx_test_failed = 0;
 static volatile int fx_this_test_failed = 0;
 static int fx_test_use_colour = -1;
-static jmp_buf fx_test_assert_buffer;
+static jmp_buf FX_VAR_NOT_USED fx_test_assert_buffer;
+
+#undef FX_VAR_NOT_USED
 
 /**
  * Prints an error message to stderr; strips the ANSI escape codes at runtime
