@@ -18,7 +18,7 @@
 
 #include <stddef.h>
 
-#include <foxen/unittest.h>
+#include <foxen-unittest.h>
 
 static void test_ok_expect() {
 	EXPECT_EQ(0, 0);

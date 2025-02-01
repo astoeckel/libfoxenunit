@@ -17,7 +17,7 @@
 project('libfoxenunit', 'c', default_options : ['c_std=c89'])
 
 # This is a header only library
-inc_foxen = include_directories('.')
+inc_foxen = include_directories('src')
 
 # Compile the example program
 exe_example = executable(
@@ -42,8 +42,8 @@ test('test_fail', exe_test_fail)
 
 # Install the header file
 install_headers(
-    ['foxen/unittest.h'],
-    subdir: 'foxen')
+    ['src/foxen-unittest.h'],
+)
 
 # Generate a Pkg config file
 pkg = import('pkgconfig')

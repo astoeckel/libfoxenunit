@@ -16,7 +16,7 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#include <foxen/unittest.h>
+#include <foxen-unittest.h>
 
 static void test_ok() {
 	EXPECT_EQ(0, 0);

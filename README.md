@@ -16,7 +16,7 @@ Please be aware that this library does explicitly *not* support automatic test d
 ## Installation
 
 ### The simple way
-Just copy `foxen/unittest.h` to a place where your compiler can find it or adjust your include directories. Done.
+Just copy `src/foxen-unittest.h` to a place where your compiler can find it or adjust your include directories. Done.
 
 ### The less simple way
 Use [Meson](https://mesonbuild.com/) to build this library. To this end, do the following.
@@ -51,7 +51,7 @@ dep_foxenunit = dependency(
 Usage is as follows:
 
 ```C
-#include <foxen/unittest.h>
+#include <foxen-unittest.h>
 
 /* Unit tests are just plain functions */
 static void test() {

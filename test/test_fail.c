@@ -18,7 +18,7 @@
 
 #include <stddef.h>
 
-#include <foxen/unittest.h>
+#include <foxen-unittest.h>
 
 static int e = 0;
 
